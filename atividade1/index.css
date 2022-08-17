@@ -76,11 +76,11 @@ header select{
 main {
     height: 33.3%;
     width: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: red;
 }
 
 main .div{
@@ -103,7 +103,7 @@ footer {
     flex-wrap: wrap;
 }
 
-footer input[type=button] {
+footer button {
     width: 10rem;
     height: 4rem;
     border-radius: 1rem;
