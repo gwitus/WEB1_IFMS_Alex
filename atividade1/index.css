@@ -83,6 +83,10 @@ main {
     color: white;
 }
 
+main .div{
+    font-size: 1rem;
+}
+
 main input[type=text] {
     width: 13rem;
     height: 4rem;
