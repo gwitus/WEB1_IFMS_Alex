@@ -33,10 +33,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: black;
+    background-image: linear-gradient( to right, red, transparent, blue ); 
 }
 
 .container {
-    border-radius: 1rem;
+    border-radius: 3rem;
     height: 40rem;
     width: 40rem;
     border: 0.3rem solid black;
@@ -68,6 +70,7 @@ header select{
     color: blue;
     text-align: center;
     border-radius: 1rem;
+    font-weight: bold;
 }
 
 main {
@@ -84,4 +87,25 @@ main input[type=text] {
     width: 13rem;
     height: 4rem;
     border-radius: 1rem;
+}
+
+footer {
+    height: calc(100% - 33.33% - 33.33%);
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer input[type=button] {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: rgb(16, 5, 44);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px black;
 }
