@@ -58,14 +58,38 @@ const calcular = document.getElementsByTagName("button")[0];
 var select = document.getElementById("matematica");
 var value = select.options[select.selectedIndex].text;
 
-//alert(soma);
 
 //função pras operações funcionarem
 calcular.onclick = function operar() {
     //Se o select na primeira posição do array for a option soma, então somar
-    if (value == soma){
-        //-----------Aqui eu fiquei cerca de uma hora, memorizar bem o problema da concatenação----------//
-        var operacao = Number (numberOne.value) + Number(numberTwo.value);
-        document.getElementById("text").value = operacao;
-    } 
+    if (value === soma){
+        somar();
+    } else if(value === subtracao) {
+        subtrair();
+    } else if (value === divisao){
+        dividir();
+    } else {
+        multiplicar();
+    }
+}
+//---------------------------------Funções com as operações--------------------------------------//
+//-----------Aqui eu fiquei cerca de uma hora, memorizar bem o problema da concatenação----------//
+function somar() {
+    var coringa =  (Number(numberOne.value)) + (Number(numberTwo.value));
+    document.getElementById("text").value = coringa;
+}
+
+function subtrair() {
+    var coringa =  (Number(numberOne.value)) - (Number(numberTwo.value));
+    document.getElementById("text").value = coringa;
+}
+
+function dividir() {
+    var coringa =  (Number(numberOne.value)) / (Number(numberTwo.value));
+    document.getElementById("text").value = coringa;
+}
+
+function multiplicar() {
+    var coringa =  (Number(numberOne.value)) * (Number(numberTwo.value));
+    document.getElementById("text").value = coringa;
 }
