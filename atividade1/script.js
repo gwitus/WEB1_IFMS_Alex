@@ -47,8 +47,8 @@ var divisao = document.querySelector("#dividir").text;
 var produto = document.querySelector("#multiplicar").text;
 
 //Pegando o value dos input number
-var numberOne = document.querySelector("#number_one").value;
-var numberTwo = document.querySelector("#number_two").value;
+var numberOne = document.querySelector("#number_one");
+var numberTwo = document.querySelector("#number_two");
 
 //Trabalhando com os elementos do main, onde vai ser apresentado os resultados
 const result = document.getElementsByName("input")[2];
@@ -64,8 +64,8 @@ var value = select.options[select.selectedIndex].text;
 calcular.onclick = function operar() {
     //Se o select na primeira posição do array for a option soma, então somar
     if (value == soma){
-        alert("deu certo");
-    } else {
-        alert("Deu errado");
-    }
+        //-----------Aqui eu fiquei cerca de uma hora, memorizar bem o problema da concatenação----------//
+        var operacao = Number (numberOne.value) + Number(numberTwo.value);
+        document.getElementById("text").value = operacao;
+    } 
 }
