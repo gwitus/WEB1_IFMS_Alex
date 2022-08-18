@@ -103,7 +103,7 @@ function multiplicar() {
 var aumento = document.getElementsByTagName("button")[2];
 //Por falta de conhecimento em Jquery, mudei a classe div pra tag article, pois uma classe não tem o atributo style se não for por jquery
 
-var coringa = 20;
+var coringa = 21;
 
 aumento.onclick = function aumentarFont() {
     var font = document.getElementsByTagName("input")[2];
@@ -113,10 +113,10 @@ aumento.onclick = function aumentarFont() {
 }
 
 //Função diminuir fonte
-var diminuto = document.getElementsByTagNameNS("button")[3];
+var diminuto = document.getElementsByTagName("button")[3];
 
-diminuto.onclick = function aumentarFont() {
+diminuto.onclick = function diminuirFont() {
     var font = document.getElementsByTagName("input")[2];
-    font.style.fontSize = coringa - 'px'; 
+    font.style.fontSize = coringa + 'px'; 
     coringa--;
 }
