@@ -40,6 +40,10 @@ noturno.onclick = function click() {
     -------------Avisar ao Alex que foi necessário colocar outro botão pra calcular, pra ficar mais fácil fds 
 */
 
+//Trabalhando com o select
+var select = document.getElementById("matematica");
+var value = select.options[select.selectedIndex].text;
+
 //Pegando a ordem de chamada dos options
 var soma = document.querySelector("#soma").text;
 var subtracao = document.querySelector("#subtracao").text;
@@ -54,42 +58,38 @@ var numberTwo = document.querySelector("#number_two");
 const result = document.getElementsByName("input")[2];
 const calcular = document.getElementsByTagName("button")[0];
 
-//Trabalhando com o select
-var select = document.getElementById("matematica");
-var value = select.options[select.selectedIndex].text;
-
-
 //função pras operações funcionarem
 calcular.onclick = function operar() {
-    //Se o select na primeira posição do array for a option soma, então somar
-    if (value === soma){
+    if (value == soma){
         somar();
     } else if(value === subtracao) {
         subtrair();
-    } else if (value === divisao){
+    } else if (value === divisao){  
         dividir();
+    } else if (value === produto) {
+         multiplicar();
     } else {
-        multiplicar();
+        alert("Nenhuma operação selecionada");
     }
 }
 //---------------------------------Funções com as operações--------------------------------------//
 //-----------Aqui eu fiquei cerca de uma hora, memorizar bem o problema da concatenação----------//
 function somar() {
-    var coringa =  (Number(numberOne.value)) + (Number(numberTwo.value));
-    document.getElementById("text").value = coringa;
+    var somar = (Number(numberOne.value)) + (Number(numberTwo.value));
+    document.getElementById("text").value = somar;
 }
 
 function subtrair() {
-    var coringa =  (Number(numberOne.value)) - (Number(numberTwo.value));
-    document.getElementById("text").value = coringa;
+    var subtrair = (Number(numberOne.value)) - (Number(numberTwo.value));
+    document.getElementById("text").value = subtrair;
 }
-
+//funcionando   
 function dividir() {
-    var coringa =  (Number(numberOne.value)) / (Number(numberTwo.value));
-    document.getElementById("text").value = coringa;
+    var dividir = (Number(numberOne.value)) / (Number(numberTwo.value));
+    document.getElementById("text").value = dividir;
 }
-
+//funcionando
 function multiplicar() {
-    var coringa =  (Number(numberOne.value)) * (Number(numberTwo.value));
-    document.getElementById("text").value = coringa;
+    var multiplicar = (Number(numberOne.value)) * (Number(numberTwo.value));
+    document.getElementById("text").value = multiplicar;
 }
