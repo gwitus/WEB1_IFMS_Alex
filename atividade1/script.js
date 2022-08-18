@@ -60,9 +60,13 @@ const calcular = document.getElementsByTagName("button")[0];
 
 //função pras operações funcionarem
 calcular.onclick = function operar() {
+    var value = 0;
+    var value = select.options[select.selectedIndex].text;
+
     if (value == soma){
         somar();
     } else if(value === subtracao) {
+        
         subtrair();
     } else if (value === divisao){  
         dividir();
@@ -92,4 +96,8 @@ function dividir() {
 function multiplicar() {
     var multiplicar = (Number(numberOne.value)) * (Number(numberTwo.value));
     document.getElementById("text").value = multiplicar;
+}
+
+function test() {
+    alert("salve");
 }
