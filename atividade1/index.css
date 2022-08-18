@@ -71,13 +71,14 @@ header input[type=number]{
 }
 
 header select{
-    width: 10rem;
+    width: 12rem;
     height: 4rem;
     font-size: 1.4rem;
     color: blue;
     text-align: center;
     border-radius: 1rem;
     font-weight: bold;
+    border: 3px solid black;
 }
 
 main {
@@ -92,7 +93,7 @@ main {
     background-color: var(--background-color-quartzo);
 }
 
-main .div{
+main article{
     font-size: 1rem;
 }
 

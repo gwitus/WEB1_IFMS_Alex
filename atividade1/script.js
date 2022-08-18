@@ -60,6 +60,7 @@ const calcular = document.getElementsByTagName("button")[0];
 
 //função pras operações funcionarem
 calcular.onclick = function operar() {
+//-----------------------------------Foi necessário resetar a var value em todo clique, se não o js salvava uma operação selected especifica e não permitia a realização das operações---------//
     var value = 0;
     var value = select.options[select.selectedIndex].text;
 
@@ -98,6 +99,24 @@ function multiplicar() {
     document.getElementById("text").value = multiplicar;
 }
 
-function test() {
-    alert("salve");
+//-----------------------------------Aumentar e diminuir fonte-------------------------------------//
+var aumento = document.getElementsByTagName("button")[2];
+//Por falta de conhecimento em Jquery, mudei a classe div pra tag article, pois uma classe não tem o atributo style se não for por jquery
+
+var coringa = 20;
+
+aumento.onclick = function aumentarFont() {
+    var font = document.getElementsByTagName("input")[2];
+    //Função concatenando pra fazer crescer sem precisar de laço
+    font.style.fontSize = coringa + 'px'; 
+    coringa++;
+}
+
+//Função diminuir fonte
+var diminuto = document.getElementsByTagNameNS("button")[3];
+
+diminuto.onclick = function aumentarFont() {
+    var font = document.getElementsByTagName("input")[2];
+    font.style.fontSize = coringa - 'px'; 
+    coringa--;
 }
