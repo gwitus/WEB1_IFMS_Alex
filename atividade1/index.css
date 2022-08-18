@@ -11,6 +11,11 @@ body {
     border: none;
 }
 
+:root {
+    --background-color-quartzo: rgb(231, 231, 231);
+    --twitter-BC: #141f27";
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -42,6 +47,7 @@ body {
     height: 40rem;
     width: 40rem;
     border: 0.3rem solid black;
+    border-radius: 10px; /*Entender pq o border=radiu não ta funfando*/
 }
 
 header {
@@ -51,7 +57,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
+    background-color: var(--background-color-quartzo);
 }
 
 header input[type=number]{
@@ -79,8 +85,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: red;
+    color: blue;
+    background-color: var(--background-color-quartzo);
 }
 
 main .div{
@@ -91,12 +97,13 @@ main input[type=text] {
     width: 13rem;
     height: 4rem;
     border-radius: 1rem;
+    border: 3px solid black;
 }
 
 footer {
     height: calc(100% - 33.33% - 33.33%);
     width: 100%;
-    background-color: yellow;
+    background-color: var(--background-color-quartzo);
     display: flex;
     justify-content: space-around;
     align-items: center;
