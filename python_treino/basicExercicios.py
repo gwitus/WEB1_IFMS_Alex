@@ -20,6 +20,3 @@ while coringa <= 15:
         print("\nO número inserido foi: " + number)
     
     coringa += 1
-
-
-#teste 2
