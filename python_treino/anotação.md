@@ -1,1 +1,0 @@
-Conforme proposto pelo professor Alex na matéria de web1, aprender flask, por opção irei colocar meus primeiros códigos python aqui com o objetivo de treinar.
