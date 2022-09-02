@@ -1,0 +1,84 @@
+#Guardar a mais fácil
+
+##
+
+1 (Algemiro) A partir do método 9Box, criar um sistema de avaliação de desempenho. Este sistema
+deve receber as entradas do usuário (respostas) e retornar o resultado da avaliação do Quadrante
+(Ilustração a seguir).
+
+##
+
+2 (Ana) Desenvolver uma aplicação web através da qual dois jogadores podem disputar uma partida
+de xadrez.
+
+##
+
+3 (André) Desenvolver uma página web que apresente uma To-Do List com dados voláteis.
+Requisitos:
+• básico de Richtext editor para criação das tarefas
+• lista de tarefas
+• uma página para cada tarefa
+
+##
+
+4 (Bruno) Desenvolver uma aplicação web que permita ao usuário jogar um jogo da forca.
+
+##
+
+5 (Eduardo) Desenvolver uma página web para calcular o IMC(índice de massa corporal) e indique
+o peso ideal para o usuário. A página deve conter um formulário a ser preenchido pelo usuário
+contendo: nome, data de nascimento, gênero, peso e altura). O resultado deve ser calculado
+automaticamente a partir da análise dos dados preenchidos, indicando qual o peso ideal que o
+usuário deve ter, além do IMC.
+
+##
+
+6 (Eloisa) Desenvolver um jogo que permita ao usuário fazer até três tentativas para adivinhar um
+número aleatório sorteado pelo computador, localizado no intervalo de zero a dez.
+Requisitos:
+• Implementar algum mecanismo de pontuação
+• Layout da página deve ser proposto pelo desenvolvedor
+• Deve ser realizada validação das entradas do sistema
+• Deve fornecer opção para iniciar nova partida sem ter que sair e entra novamente na página
+(e sem ter que usar F5)
+• Deve fornecer uma opção para usuário encerrar a partida
+• Deve-se apresentar um resumo das partidas disputadas desde que a página foi aberta.
+
+##
+
+7 (Emanuel) Desenvolver uma aplicação web que permita fazer upload de arquivos, e convertê-los
+em outros formatos, permitindo que o usuário faça download dos arquivos convertidos para seu
+computador. Arquivos suportados: Audio e Video.
+Importante: Aceitar pelo menos 3 extensões diferentes de cada tipo de entrada, e oferecer pelo
+menos uma nova extensão de saída do arquivo usado como entrada.
+
+##
+
+8 (Flávio) Desenvolver uma página web que permita ao usuário digitar os dados de estudantes do
+curso TADS, inserindo estes estudantes em uma lista apresentada no site de forma dinâmica.
+
+##
+
+9 (Frank) Desenvolver uma aplicação web que apresente o Mapa da Ucrânica, indicando a situação
+atual de cada região do país de acordo com a seguinte legenda:
+• Território de conflitos internos
+• Território ocupado pela Rússia
+• Território com poucos habitantes
+• Território que não pertence às classes anteriores
+
+##
+
+10 (Guilherme) Desenvolver uma aplicação web que contenha uma lista de dados pessoais fictícios
+(nome, sobrenome, data de nascimento, gênero, portador de necessidades específicas (S ou N),
+altura, peso, etnia). Quando o usuário disparar um evento na página web, o sistema deve retornar as
+pessoas da lista agrupadas por idade.
+
+##
+
+11 (Matheus) Desenvolver uma aplicação web que permita ao usuário jogar o Jogo da Velha contra
+o computador.
+
+##
+
+12 (Paulo) Desenvolver uma página web que permita ao usuário fazer conversão de massa, volume,
+temperatura e velocidade.
