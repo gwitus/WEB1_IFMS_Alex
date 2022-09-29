@@ -9,14 +9,17 @@
 
 :root {
     /*Cores do Header*/
-    --black-header: #22142b;
-    --cinza-header: #e6e7e8;
-    --cinzaEscuro-header: #58595b;
-    --blue-header: #3777ee;
+    --background-black-header: #070b0f;
+    --background-cinza-header: #e6e7e8;
+    --background-cinzaEscuro-header: #58595b;
+    --background-blue-header: #3777ee;
     /*Letras*/
     --color-blue-word-body-e-Header: #3777ee;
     --color-white-word-header: #fbfeff;
     --color-cinza-word-header: #58595b;
+    /*Flexbox*/
+    --flexBox-background-white: #fbfbfb;
+    --flexBox-color-blue: #3777ee;
     --flexBox-words-hover-azulEscuro: #182c3f;
     /*Cores estruturais*/
     --body-white: #efeff0;
@@ -24,7 +27,149 @@
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: var(--flexBox-white);
+}
+
 header {
+    display: grid;
+    grid-template-rows: 45px 50px 120px 48px;
     height: 26.3rem; /*263px de altura*/
     width: 100vw;
+}
+
+.headUm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--background-black-header);
+    color: var(--color-white-word-header);
+}
+
+/*
+.headUm #rcn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headUm #meiaSete {
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid var(--color-white-word-header);
+}
+
+.headUm h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+*/
+
+.headDois {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-cinza-header);
+}
+
+.headDois #logoDois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.headDois #opcao {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headDois #barra {
+    height: 20px;
+    width: 1px;
+    background-color: #9AA0AD;
+}
+
+.headDois #opcao a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-cinza-word-header);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.headDois #opcao a:hover{
+    color: var(--background-black-header);
+}
+
+.headDois #icons {
+    width: 2rem;
+    height: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-right: 30px;
+}
+
+.headDois #icons a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20px;
+    height: 19.94px;
+}
+
+
+#icons #facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 65%;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+}
+
+#icons #facebook i {
+    color: var(--background-cinzaEscuro-header);
+    font-size: 1.7rem;
+}
+#icons #instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 65%;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+}
+
+#icons #instagram i {
+    color: var(--background-cinzaEscuro-header);
+    font-size: 1.7rem;
+}
+
+.headTres {
+    background-color: var(--background-blue-header);
+}
+
+.headQuatro {
+    background-color: var(--background-cinzaEscuro-header);
 }
