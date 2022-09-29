@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 67.5%;
+}
+
+:root {
+    /*Cores do Header*/
+    --black-header: #22142b;
+    --cinza-header: #e6e7e8;
+    --cinzaEscuro-header: #58595b;
+    --blue-header: #3777ee;
+    /*Letras*/
+    --color-blue-word-body-e-Header: #3777ee;
+    --color-white-word-header: #fbfeff;
+    --color-cinza-word-header: #58595b;
+    --flexBox-words-hover-azulEscuro: #182c3f;
+    /*Cores estruturais*/
+    --body-white: #efeff0;
+    --flexBox-white: #ffffff;
+
+}
+
+header {
+    height: 26.3rem; /*263px de altura*/
+    width: 100vw;
+}
