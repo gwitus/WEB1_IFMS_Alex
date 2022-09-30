@@ -203,13 +203,14 @@ header {
 .headTres #menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 40px;
     width: 60px;
     margin-left: 40px;
 }
 
 .headTres #menu i {
-    font-size: 6rem;
+    font-size: 40em;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -217,6 +218,8 @@ header {
 }
 
 .tvc {
+    width: 14rem;
+    height: 6rem;
     margin-left: 4rem;
     display: flex;
     justify-content: flex-start;
@@ -228,15 +231,15 @@ header {
     justify-content: center;
     align-items: center;
     color: var(--color-white-word-header);
-    font-size: 3.2rem;
-    gap: 0.8rem;
+    font-size: 3.2rem;    gap: 0.8rem;
     font-weight: normal;
 }
 
 .radios {
-    margin-left: 4rem;
     width: 103.83px;
-    height: 19px;   
+    width: 14rem;
+    height: 6rem;
+    justify-content: flex-start;
 }
 
 .radios a {
@@ -252,8 +255,77 @@ header {
 
 }
 
+.radios #iconeRadio i {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.logoTres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin-left: 10rem;
+    height: 6rem;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 20rem;
+    height: 6rem;
+}
+
+.date h2 {
+    color: var(--color-white-word-header);
+    font-size: 1.4rem;
+}
+
+.date #cidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.zap {
+    width: 17rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 4rem;
+}
+
+.zap #wordZap {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.zap #wordZap h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.zap #wordZap h3 {
+    font-weight: 350;
+}
+
 .zap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white-word-header);
+    font-size: 3rem;
     pointer-events: none;
+    gap: 2px;
+}
+
+.zap #iconZap i{
+    font-size: 1.8rem;
 }
 
 .headQuatro {
