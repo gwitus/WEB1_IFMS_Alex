@@ -256,29 +256,31 @@
                     </div>
                 </div>
 
-                <article>
-                    <form action="/pagina-processa-dados-do-form" method="post">
-                        <div class="escrita">
-                            <div class="cabecalho">
-                                <input type="text" placeholder="  Insira o cabeçalho..." id="cabecalho">
-                            </div>
-                            <div id="noticia">
-                                <input type="text" id="noticia" placeholder=" Insira o título da notícia...">
-                            </div>
-                            <div class="descricao">
-                                <input type="text" id="descricao" placeholder=" Insira a descrição da notícia...">
-                            </div>
-                        </div>
-    
-                        <div class="imagemArtigo">
-                            <input type="file" name="imagem" id="_imagemDoArtigo">
+                <form action="" method="post">
+                    <div class="escrita">
+                        <div class="cabecalho">
+                          <input type="text" placeholder="  Insira o cabeçalho..." id="cabecalho">
                         </div>
 
-                        <div class="button">
-                            <button type="submit">Submit</button>
+                        <div id="noticia">
+                            <input type="text" id="noticia" placeholder=" Insira o título da notícia...">
                         </div>
-                    </form>
-                </article>
+                        
+                        <div class="descricao">
+                            <input type="text" id="descricao" placeholder=" Insira a descrição da notícia...">
+                        </div>
+                    </div>
+    
+                    <div class="imagemArtigo">
+                        <i class='bx bx-image-alt' id="substituto"></i>
+                        
+                        <input type="file" name="imagem" id="_imagemDoArtigo">
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>    
+                </form>
             </div>
         </main>
     </body>

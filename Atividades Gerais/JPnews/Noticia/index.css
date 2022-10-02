@@ -516,9 +516,10 @@ main {
     font-size: 1.5rem;
 }
 
-article {
+form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
     height: 70%;
     width: 70%;
@@ -526,21 +527,16 @@ article {
     border: 1px solid black;
 }
 
-form {
-    width: 100%;
-    height: 100%;
-}
-
-article .escrita {
+form .escrita {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50rem;
+    height: 30rem;
     align-items: center;
     justify-content: start;
 }
 
-article .cabecalho {
+form .cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -548,7 +544,7 @@ article .cabecalho {
     width: 100%;
 }
 
-article .cabecalho input[type=text] {
+form .cabecalho input[type=text] {
     width: 70%;
     border: 1px solid black;
     height: 4rem;
@@ -557,12 +553,12 @@ article .cabecalho input[type=text] {
     color: var(--color-cinza-word-header);
 }
 
-article .cabecalho input[type=text]:focus {
+form .cabecalho input[type=text]:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
-article #noticia {
+form #noticia {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -570,7 +566,7 @@ article #noticia {
     width: 100%
 }
 
-article #noticia input[type=text] {
+form #noticia input[type=text] {
     width: 70%;
     border: 1px solid black;
     height: 4rem;
@@ -579,7 +575,7 @@ article #noticia input[type=text] {
     color: var(--background-blue-header);
 }
 
-article .descricao {
+form .descricao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -587,7 +583,7 @@ article .descricao {
     width: 100%;
 }
 
-article .descricao input[type=text] {
+form .descricao input[type=text] {
     width: 70%;
     border: 1px solid black;
     height: 4rem;
@@ -595,3 +591,46 @@ article .descricao input[type=text] {
 }
 
 
+.imagemArtigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    width: 60%;
+    height: 20rem;
+    border: 1px solid black;
+    gap: 2rem
+}
+
+.imagemArtigo i {
+    font-size: 10rem;
+}
+
+/*
+.imagemArtigo #label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 4rem;
+    font-size: 2rem;
+    color: var(--background-cinza-header);
+    background: var(--background-blue-header);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+*/
+
+form input[type='file'] {
+    height: 1.3rem;
+}
+
+form button {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 2rem;
+    background: var(--background-blue-header);
+    color: var(--flexBox-white);
+    font-size:  2rem;
+    font-weight: bold;
+}
