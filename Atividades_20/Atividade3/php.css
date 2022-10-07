@@ -33,7 +33,7 @@ main .linhaUm, .linhaDois, .linhaTres {
     gap: 1rem;
 }
 
-main #box {
+main #box, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +44,7 @@ main #box {
     background-color: red;
 }
 
-main #box i {
+main #box, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 i {
     font-size: 3rem;
     color: white;
 }
