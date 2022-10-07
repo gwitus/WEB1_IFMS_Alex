@@ -108,6 +108,6 @@
         </script>
         ";  
     } else {
-        echo "\nErro, um ou mais campos foram preenchidos de forma incorreta!";
+        echo "<div style='font-size:40px; color:white'>" . "Erro, um ou mais campos não foram preenchidos ou foram preenchidos incorretamente" . "</div>";
     }
 ?>
